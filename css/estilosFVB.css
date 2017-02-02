@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.main{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #b0daff;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.set{
+    margin:1em;
+    padding:1em;
+    background-color: white;
+    border-radius: 3px;
+}
+.set .pregunta{
+    text-align: left;
+}
+.retro{
+    display: none;
+}
+div.contestado > .retro{
+    display: block;
+}
+div.contestado > .retro[data-correcta="true"]{
+    color: #007509;
+}
+div.contestado > .retro[data-correcta="false"]{
+    color: #860e00;
+}
+button{
+    margin: 1px;
+}
